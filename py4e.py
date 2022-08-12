@@ -167,7 +167,6 @@
 # print(colonpos)
 
 
-
 # fhand = open("mbox-short.txt")
 # count = 0
 # for line in fhand:
@@ -197,7 +196,7 @@
 # filename = input("Please enter a file name: ")
 # try:
 #     fhand = open(filename)
-# except: 
+# except:
 #     print("File cannot be opened")
 #     quit()
 # count = 0
@@ -238,11 +237,11 @@
 #         # print(line)
 #         newline = line.split()
 #         print(newline[1])
-        
+
 # print(count)
 
-#basically create a range of n and times the index of n by x
-# empty_list = []        
+# basically create a range of n and times the index of n by x
+# empty_list = []
 # def count_by(x, n):
 #     """
 #     Return a sequence of numbers counting by `x` `n` times.
@@ -252,7 +251,7 @@
 #     return empty_list
 # print(count_by(2, 5))
 
-#leap year
+# leap year
 # years divisible by 4 are leap years
 # but years divisible by 100 are not leap years
 # but years divisible by 400 are leap years
@@ -260,3 +259,89 @@
 #     return year % 100 != 0 and year % 4 == 0 or year % 400 == 0
 
 # print(isLeapYear(1100))
+
+# emptylist = []
+# def count_by(x, n):
+#     """
+#     Return a sequence of numbers counting by `x` `n` times.
+#     """
+#     for i in range(1, n+1):
+#         emptylist.append(i*x)
+#     return emptylist
+
+# print(count_by(3,5))
+# count = {}
+# pizzas = ["sausage", "pepperoni", "cheese", "cheese", "mushroom", "cheese"]
+# for pizza in pizzas:
+#     if pizza not in count:
+#         count[pizza] = 1
+#     else:
+#         count[pizza] = count[pizza] + 1
+# print(count)
+
+# count = {}
+# phrase = input("Please enter a line of text: ")
+# phraselist = phrase.split()
+# print(phraselist)
+# for word in phraselist:
+#     if word not in count:
+#         count[word]= 1
+#     else:
+#         count[word] = count[word] + 1
+# print(count)
+
+# count = {}
+# phrase = input('Please enter a phrase: ')
+# newphrase = phrase.split()
+# print(newphrase)
+# for word in newphrase:
+#     if word not in count:
+#         count[word] = 1
+#     else:
+#         count[word] = count[word] + 1
+# print(count)
+
+# d= {'a': 10, 'b':1, 'c':22}
+# print(d.items())
+# sortedItems = sorted(d.items())
+# print(sortedItems)
+
+#  d= {'a': 10, 'b':1, 'c':22}
+
+# for key, value in sorted(d.items()):
+#     print(key, value)
+
+# d= {'a': 10, 'b':1, 'c':22}
+# tempList = []
+# for key, value in d.items():
+#     tempList.append((value, key))
+# print(tempList)
+
+# tempList = sorted(tempList)
+# print(tempList)
+
+# tempList = sorted(tempList, reverse=True)
+# print(tempList)
+# ----simple way-----
+# d= {'a': 10, 'b':1, 'c':22}
+# print(sorted( [ (v,k) for k,v in d.items() ] ))
+
+
+# with open('mbox-short.txt') as f:
+#     output= f.read()
+#     print(output)
+
+# ------------REGULAR EXPRESSIONS-----------
+# import re
+
+# hand = open('mbox-short.txt')
+# for line in hand:
+#     line = line.rstrip()
+#     if re.search('From:', line):
+#         print(line)
+
+
+# -----------USING WEB SERVICES-----------
+# 1.) XML- eXtensible Markup Language
+        # primary purpose is to help information systems share structured data
+    
